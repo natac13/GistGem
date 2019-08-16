@@ -22,10 +22,10 @@ If run without any command, will output a list of the Public Gists associated wi
 
 ### [Available Commands](https://github.com/defunkt/gist#password-less-login)
 
-
 ### TL'DR
 
 Motivation was to update my `.bash_aliases` file with a command line tool. 
 
 ### License 
+
 MIT
