@@ -15,7 +15,7 @@ Based off [Gist](https://github.com/defunkt/gist). A Ruby Gem command line tool 
 ```
 docker pull natac13/gistgem
 
-docker container run -i --mount type=bind,source=/home/natac/.gist,target=/root/.gist natac13/gistgem <command>
+docker container run -i --mount type=bind,source=/home/natac/.gist,target=/root/.gist natac13/gistgem [command]
 ```
 
 If run without any command, will output a list of the Public Gists associated with the access token.
