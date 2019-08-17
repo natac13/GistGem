@@ -20,4 +20,4 @@ VOLUME [ "/root/.gist" ]
 # CMD ["gist"]
 ENTRYPOINT [ "gist" ]
 
-CMD ["-l"]
+CMD ["--help"]
