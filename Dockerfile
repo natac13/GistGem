@@ -16,8 +16,6 @@ RUN gem install gist
 
 VOLUME [ "/root/.gist" ]
 
-# ENTRYPOINT [ "bash", "entrypoint.sh" ]
-# CMD ["gist"]
 ENTRYPOINT [ "gist" ]
 
 CMD ["--help"]
