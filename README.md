@@ -1,6 +1,6 @@
 # GistGem
 
-Based off [Gist](https://github.com/defunkt/gist). A Ruby Gem command line tool for uploading files to Github Gist.
+Docker Image based on [Gist](https://github.com/defunkt/gist); a Ruby Gem command line tool for uploading files to Github Gist.
 
 ## How to Use
 
@@ -15,10 +15,11 @@ Based off [Gist](https://github.com/defunkt/gist). A Ruby Gem command line tool 
 ```
 docker pull natac13/gistgem
 
-docker container run -i --mount type=bind,source=/home/natac/.gist,target=/root/.gist natac13/gistgem [command]
+# The source is the location of the access token
+docker container run --rm -i --mount type=bind,source=/home/[username]/.gist,target=/root/.gist natac13/gistgem [command]
 ```
 
-If run without any command, will output a list of the Public Gists associated with the access token.
+If run without any command, the container will run `gist --help`
 
 ### [Available Commands](https://github.com/defunkt/gist#password-less-login)
 
