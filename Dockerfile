@@ -12,7 +12,7 @@ WORKDIR /root
 
 COPY entrypoint.sh /root/entrypoint.sh
 
-RUN gem install gist
+RUN gem install gist>=6
 
 VOLUME [ "/root/.gist" ]
 
